@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Input Field</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+      #box {
+        max-width: 320px;
+        height: auto;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        padding: 15px 30px 30px 30px;
+      }
+      .tell {
+        margin-bottom: 0px;
+      }
+      p {
+        padding-bottom: 20px;
+        color: gray;
+        font-size: 16px;
+      }
+      .label {
+        font-size: 16px;
+        color: gray;
+      }
+      #work_area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+      .design {
+        border: 1px solid gray;
+        border-radius: 3px;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-right: 5px;
+      }
+      .design:hover {
+        color: #1a2db9;
+        border: 1px solid #1a2db9;
+      }
+
+      a {
+        text-decoration: none;
+        color: gray;
+        font-weight: 800;
+      }
+      a:hover {
+        color: #1a2db9;
+      }
+      .fa-pen-nib,
+      .fa-file-alt {
+        font-size: 20px;
+        padding-right: 5px;
+      }
+      #input_field {
+        margin-top: 15px;
+      }
+      input {
+        width: 94%;
+        height: 25px;
+        margin-bottom: 15px;
+        margin-top: 7px;
+        outline: none;
+        padding-left: 8px;
+      }
+      #mobile {
+        padding-left: 45px;
+        width: 83%;
+      }
+      button {
+        width: 99%;
+        padding: 15px 0px;
+        text-align: center;
+        background-color: #1a2db9;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+      }
+      .fa-arrow-right {
+        padding-left: 8px;
+      }
+      #image {
+        width: 30px;
+        height: auto;
+        position: absolute;
+        bottom: 97px;
+        left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h3 class="tell">Tell us about you</h3>
+      <p>
+        Please tell a bit about you so what we can personalize your onboarding
+        experience.
+      </p>
+
+      <form action="">
+        <span class="label">You are looking for</span>
+        <div id="work_area">
+          <div class="design">
+            <i class="fas fa-pen-nib"></i>
+            <span><a href="#">Designs</a></span>
+          </div>
+          <div class="design">
+            <i class="far fa-file-alt"></i>
+            <span><a href="#">Projects</a></span>
+          </div>
+        </div>
+        <div id="input_field">
+          <label for="name">Full name</label><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+          /><br />
+          <label for="location">Location</label><br />
+          <input type="text" id="location" placeholder="Location" /><br />
+          <label for="phone no">Phone number</label><br />
+          <img src="Capture.PNG" id="image" />
+          <input
+            id="mobile"
+            type="telephone"
+            id="phone no"
+            placeholder="Enter your phone number"
+          /><br />
+          <button type="submit">
+            Proceed to next step<i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
